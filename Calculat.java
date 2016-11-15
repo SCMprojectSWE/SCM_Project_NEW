@@ -36,7 +36,7 @@ public class Calculat {
 	
 	public double Calculat_com3(){
 		double com;
-		 com =(salary+(sales *0.01));
+		 com =(salary+(sales *0.015));
 		 return com;
 	}
 	
