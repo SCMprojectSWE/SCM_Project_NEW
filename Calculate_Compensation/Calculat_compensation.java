@@ -12,16 +12,21 @@ public class Calculat_compensation {
 	     double salary = input.nextDouble();
 	      System.out.print("Input Monthly sales: ");
 	      double sales = input.nextDouble();
-	      Calculat cal = new Calculat(name,salary,sales);
-	      if(cal.getsales()>=50001){
-	    	  System.out.println("Name Employee is "+cal.getname()+"   compensation is : " + cal.Calculat_com1()); 
+	      if(sales>100001){
+	    	  double com =(salary+(sales *0.03));
+	    	  System.out.println("Name Employee is "+name+"   compensation is : " + com); 
 	      }
-	      else if (cal.getsales()>=25001){
-	    	  System.out.println("Name Employee is "+cal.getname()+"   compensation is : " + cal.Calculat_com2()); 
+	      else if (sales>50001){
+	    	  double com =(salary+(sales *0.02));
+	    	  System.out.println("Name Employee is "+name+"   compensation is : " + com); 
 	      }
 	      else{
-	    	  System.out.println("Name Employee is "+cal.getname()+"   compensation is : " + cal.Calculat_com3()); 
+	    	  double com =(salary+(sales *0.01));
+	    	  System.out.println("Name Employee is "+name+"   compensation is : " + com); 
 	      }
 	}
 }
+
+
+
 
