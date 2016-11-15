@@ -13,10 +13,10 @@ public class Calculat_compensation {
 	      System.out.print("Input Monthly sales: ");
 	      double sales = input.nextDouble();
 		   Calculat cal = new Calculat(name,salary,sales);
-	      if(cal.getsales()>=100001){
+	      if(cal.getsales()>=50001){
 	    	  System.out.println("Name Employee is "+cal.getname()+"   compensation is : " + cal.Calculat_com1()); 
 	      }
-	      else if (cal.getsales()>=50001){
+	      else if (cal.getsales()>=25001){
 	    	  System.out.println("Name Employee is "+cal.getname()+"   compensation is : " + cal.Calculat_com2()); 
 	      }
 	      else{
